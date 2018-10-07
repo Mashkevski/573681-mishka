@@ -29,12 +29,12 @@
           <h2 class="order__title">Вязание на заказ</h2>
           <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </header>
-        <form class="form" action="#">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__element">
             <legend class="form__title">ТИП</legend>
-            <input class="visually-hidden" type="radio" name="type" id="type-1" checked>
+            <input class="visually-hidden" type="radio" value="1" name="type" id="type-1" checked>
             <label class="form__label" for="type-1">Аксуссуар для интерьера</label>
-            <input class="visually-hidden" type="radio" name="type" id="type-2">
+            <input class="visually-hidden" type="radio" value="2" name="type" id="type-2">
             <label class="form__label" for="type-2">Детская игрушка</label>
           </fieldset>
           <fieldset class="form__element">
@@ -55,11 +55,11 @@
           <fieldset class="form__element">
             <legend class="form__title">ФИО</legend>
             <label class="form__label" for="name-1">Имя:</label>
-            <input class="form__input-field" id="name-1" type="text" name="name-1" placeholder="Введите ваше имя*">
+            <input class="form__input-field" id="name-1" type="text" name="first-name" placeholder="Введите ваше имя*">
             <label class="form__label" for="name-2">Фамилия:</label>
-            <input class="form__input-field" id="name-2" type="text" name="2" placeholder="Укажите фамилию*">
+            <input class="form__input-field" id="name-2" type="text" name="surname" placeholder="Укажите фамилию*">
             <label class="form__label" for="name-3">Отчество:</label>
-            <input class="form__input-field" id="name-3" type="text" name="3" placeholder="Отчество, если желаете">
+            <input class="form__input-field" id="name-3" type="text" name="patronymic-name" placeholder="Отчество, если желаете">
           </fieldset>
           <fieldset class="form__element">
             <legend class="form__title">ТЕЛ</legend>

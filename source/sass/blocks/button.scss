@@ -1,0 +1,23 @@
+.button {
+  padding: 14px;
+
+  display: inline-block;
+
+  border: 2px solid $content-color;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $content-color;
+  color: #ffffff;
+}
+
+.button:active {
+  color: transparentize(#ffffff, 0.3);
+}

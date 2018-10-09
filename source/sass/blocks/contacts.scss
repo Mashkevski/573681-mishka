@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+}
+
+.contacts-items {
+  margin-bottom: 40px;
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__term {
+  min-width: 68px;
+  padding-right: 10px;
+
+  word-wrap: break-word;
+}
+
+.contacts__description {
+  margin: 0;
+}
+
+.contacts__description--email {
+  border-bottom: 1px solid $main-color;
+}
+
+.contacts__map {
+  align-self: center;
+
+  margin-bottom: 39px;
+}
+
+.contacts__write-us {
+  align-self: center;
+}

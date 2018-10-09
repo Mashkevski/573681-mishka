@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  width: 55px;
+  height: 79px;
+}
+

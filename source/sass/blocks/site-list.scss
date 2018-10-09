@@ -1,0 +1,27 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  list-style: none;
+}
+
+.site-list__item {
+  padding: 27px 10px 27px 46px;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.site-list__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-list__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}

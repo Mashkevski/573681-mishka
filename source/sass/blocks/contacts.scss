@@ -4,6 +4,11 @@
   line-height: 30px;
 }
 
+.contacts__title,
+.contacts-items {
+  padding: 0 30px;
+}
+
 .contacts__title {
   margin: 0;
   margin-bottom: 30px;
@@ -30,7 +35,10 @@
   margin: 0;
 }
 
-.contacts__description--email {
+.contacts__email {
+  text-decoration: none;
+  color: inherit;
+
   border-bottom: 1px solid $main-color;
 }
 

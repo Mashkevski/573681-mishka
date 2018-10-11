@@ -9,13 +9,13 @@
   background-color: $main-color;
 }
 
-.catalog-sections__item--toys {
+.catalog-sections__item--toy {
   background-color: darken(desaturate(adjust-hue($main-color, 3deg), 6%), 5%);
 }
 
 .catalog-sections__link {
   display: block;
-  padding: 28px 30px;
+  padding: 28px 0;
 
   font-size: 19px;
   line-height: 24px;
@@ -24,7 +24,33 @@
   text-decoration: none;
 }
 
+.catalog-section__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+}
+
 .catalog-sections__title {
-  display: inline-block;
+  display: block;
   width: 130px;
+}
+
+.catalog-sections__icon {
+  position: absolute;
+
+  opacity: 0.5;
+}
+
+.catalog-sections__icon path {
+  fill: #149080;
+}
+
+.catalog-sections__icon--interior {
+  top: -5px;
+  right: 6px;
+}
+
+.catalog-sections__icon--toy {
+  top: -4px;
+  right: -7px;
 }

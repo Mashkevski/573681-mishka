@@ -1,6 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
+
   line-height: 30px;
 }
 
@@ -22,6 +23,8 @@
 
 .contacts__item {
   display: flex;
+
+  font-size: 15px;
 }
 
 .contacts__term {

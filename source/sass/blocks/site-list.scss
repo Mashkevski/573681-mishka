@@ -10,6 +10,8 @@
 }
 
 .site-list__item {
+  position: relative;
+
   padding: 27px 10px 27px 46px;
 }
 
@@ -22,6 +24,22 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.site-list__link:hover .site-list__icon {
+  opacity: 1;
+}
+
+.site-list__link:hover path {
+  fill: $main-color;
+}
+
 .site-list__link:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+}
+
+.site-list__icon {
+  position: absolute;
+  top: 32px;
+  left: 0;
+
+  opacity: 0.2;
 }

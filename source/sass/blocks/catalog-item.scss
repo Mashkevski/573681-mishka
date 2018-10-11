@@ -33,6 +33,8 @@
 }
 
 .catalog-item__price {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding-left: 28px;
 }
@@ -42,3 +44,20 @@
   line-height: 24px;
 }
 
+.catalog-item__icon {
+  padding: 0 28px 0 10px;
+
+  opacity: 0.2;
+}
+
+.catalog-item__icon:hover {
+  opacity: 1;
+}
+
+.catalog-item__icon:hover path {
+  fill: $main-color;
+}
+
+.catalog-item__icon:active {
+  opacity: 0.3;
+}

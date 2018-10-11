@@ -1,0 +1,65 @@
+.advantages {
+  padding: 0 30px;
+}
+
+.advantages__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+
+  padding: 70px 0 15px 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.advantages__icon {
+  position: absolute;
+}
+
+.advantages__icon path {
+  fill: $main-color;
+}
+
+.advantages__icon--flower {
+  top: 15px;
+  left: 8px;
+}
+
+.advantages__icon--money {
+  top: 16px;
+  left: 0;
+}
+
+.advantages__icon--heart {
+  top: 22px;
+  left: 7px;
+}
+
+.advantages__icon--ball {
+  top: 18px;
+  left: 3px;
+}
+
+.advantages__icon--rochet {
+  top: 19px;
+  left: -6px;
+}
+
+.advantages__icon--gift {
+  top: 17px;
+  left: 3px;
+}

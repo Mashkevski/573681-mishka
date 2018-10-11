@@ -1,0 +1,29 @@
+.copyright {
+  padding: 22px 0;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright__link path {
+  fill: $main-color;
+}
+
+.copyright__link:hover path {
+  fill: darken(desaturate(adjust-hue($main-color, 3deg), 4%), 8%);
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__text {
+  margin-right: 30px;
+
+  font-size: 19px;
+  line-height: 19px;
+}

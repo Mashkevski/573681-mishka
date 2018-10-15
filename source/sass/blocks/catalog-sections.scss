@@ -54,3 +54,18 @@
   top: -4px;
   right: -7px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-sections {
+    display: flex;
+  }
+
+  .catalog-sections__item {
+    flex-grow: 1;
+  }
+
+  .catalog-section__wrapper {
+    width: auto;
+    margin: 0 37px;
+  }
+}

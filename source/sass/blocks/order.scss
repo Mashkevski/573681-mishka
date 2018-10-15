@@ -1,5 +1,5 @@
 .order {
-  padding: 75px 30px 30px 30px;
+  width: 260px;
 }
 
 .order__title {
@@ -16,4 +16,44 @@
 
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    width: 668px;
+    padding: 0;
+  }
+
+  .order__title {
+    margin-bottom: 150px;
+
+    text-align: center;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .order__description {
+    margin-bottom: 56px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    width: 1050px;
+  }
+
+  .order__header {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+
+  .order__title {
+    margin-bottom: 220px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

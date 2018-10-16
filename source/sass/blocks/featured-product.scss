@@ -87,11 +87,13 @@
   .featured-product__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 51px;
+    margin-bottom: 46px;
   }
 
   .featured-product__name {
     z-index: 100;
+
+    margin: 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -99,7 +101,8 @@
 
   .featured-product__title {
     width: 80px;
-    margin-right: 25px;
+    margin: 9px 28px 0 0;
+
 
     line-height: 17px;
     text-align: center;
@@ -162,8 +165,10 @@
 
   .featured-product__title {
     position: absolute;
-    top: 85px;
+    top: 88px;
     left: 48px;
+
+    margin: 0;
   }
 
   .featured-product__description {

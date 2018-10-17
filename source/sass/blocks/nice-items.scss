@@ -5,9 +5,10 @@
 }
 
 .nice-items__title {
+  width: 260px;
   min-height: 283px;
-  margin: 0;
-  padding: 72px 30px 50px 30px;
+  margin: 0 auto;
+  padding: 72px 0 50px 0;
 
   font-size: 27px;
   line-height: 30px;
@@ -16,3 +17,34 @@
   box-sizing: border-box;
 }
 
+@media (min-width: $tablet-width) {
+  .nice-items {
+    width: 668px;
+
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-position: center -85px;
+  }
+
+  .nice-items__title {
+    width: 100%;
+    min-height: 543px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nice-items {
+    width: 1050px;
+
+    background-image: url("../../img/hero-desktop@1x.jpg");
+  }
+
+  .nice-items__title {
+    padding: 72px 175px 50px 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

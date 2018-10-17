@@ -10,7 +10,7 @@
 }
 
 .catalog-sections__item--toy {
-  background-color: darken(desaturate(adjust-hue($main-color, 3deg), 6%), 5%);
+  background-color: #56c3b2;
 }
 
 .catalog-sections__link {
@@ -53,4 +53,19 @@
 .catalog-sections__icon--toy {
   top: -4px;
   right: -7px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-sections {
+    display: flex;
+  }
+
+  .catalog-sections__item {
+    flex-grow: 1;
+  }
+
+  .catalog-section__wrapper {
+    width: auto;
+    margin: 0 37px;
+  }
 }

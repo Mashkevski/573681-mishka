@@ -1,0 +1,31 @@
+.main-header {
+  margin: 0 auto;
+}
+
+.main-header--catalog {
+  margin-bottom: 73px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    margin-bottom: 22px;
+  }
+
+  .main-header--catalog {
+    margin-bottom: 36px;
+  }
+
+  .main-header--order {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header--catalog {
+    margin-bottom: 16px;
+  }
+
+  .main-header--order {
+    margin-bottom: 36px;
+  }
+}

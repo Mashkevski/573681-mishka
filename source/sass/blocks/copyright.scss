@@ -1,9 +1,14 @@
 .copyright {
+  display: flex;
+  justify-content: center;
+  width: 260px;
   padding: 22px 0;
+
+  box-sizing: border-box;
 }
 
 .copyright__link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
@@ -14,7 +19,7 @@
 }
 
 .copyright__link:hover path {
-  fill: darken(desaturate(adjust-hue($main-color, 3deg), 4%), 8%);
+  fill: #46c1ae;
 }
 
 .copyright__link:active {
@@ -26,4 +31,11 @@
 
   font-size: 19px;
   line-height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 200px;
+    justify-content: flex-end;
+  }
 }

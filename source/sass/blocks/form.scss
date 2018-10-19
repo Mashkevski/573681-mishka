@@ -82,7 +82,7 @@
   width: 39px;
   height: 39px;
 
-  border: 2px solid #444444;
+  border: 2px solid $content-color;
 
   box-sizing: border-box;
 }
@@ -149,7 +149,7 @@
   font-size: inherit;
   line-height: inherit;
 
-  border: 2px solid #444444;
+  border: 2px solid $content-color;
   box-sizing: border-box;
   outline: none;
 }
@@ -173,7 +173,7 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
-  color: #444444;
+  color: $content-color;
 }
 
 .form__send-order {

@@ -15,7 +15,7 @@
 
 .contacts__title {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   font-size: 18px;
 }
@@ -30,6 +30,7 @@
   padding-bottom: 30px;
 
   font-size: 15px;
+  color: $content-color;
 
   box-sizing: border-box;
 }
@@ -54,14 +55,20 @@
   text-decoration: none;
   color: inherit;
 
-  border-bottom: 1px solid $main-color;
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__email:hover {
+  color: #46c1ae;
+
+  border-color: #62d1ba;
 }
 
 .contacts__mobile-map {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 }
 
 .contacts__tablet-map,
@@ -82,20 +89,20 @@
 
   .contacts__title {
     margin-bottom: 0;
-    padding: 19px 0 45px 0;
+    padding: 19px 0 49px 0;
 
     font-size: 43px;
     line-height: 50px;
 
     background-image: url("../../img/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: right 4px;
   }
 
   .contacts__items {
     display: flex;
 
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 
   .contacts__item {

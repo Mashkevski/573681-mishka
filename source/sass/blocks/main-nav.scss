@@ -1,7 +1,44 @@
-.main-nav {
-  width: 100%;
-}
+@media (max-width: $mobile-width-only) {
+  .main-nav__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
 
-.main-nav__toggle {
-  display: none;
+    display: block;
+    width: 79px;
+    height: 79px;
+
+    background-color: #ffffff;
+    background-image: url("../../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    background-image: url("../../img/icon-menu-close.svg");
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
+  }
 }

@@ -1,3 +1,7 @@
+.site-list {
+  width: 260px;
+}
+
 .site-list,
 .site-list__sub-menu {
   margin: 0;
@@ -22,29 +26,33 @@
 
 .site-list__item {
   position: relative;
-
-  padding: 27px 10px 27px 46px;
 }
 
 .site-list__link {
+  display: block;
+  padding: 27px 10px 27px 0;
+  padding-left: 18%;
+
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-.site-list__link:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
+.site-list__link[href] {
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-.site-list__link:hover .site-list__icon {
-  opacity: 1;
-}
+  &:hover .site-list__icon {
+    opacity: 1;
+  }
 
-.site-list__link:hover path {
-  fill: $main-color;
-}
+  &:hover path {
+    fill: $main-color;
+  }
 
-.site-list__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__icon {
@@ -69,6 +77,8 @@
     flex-shrink: 0;
 
     font-size: 15px;
+
+    box-sizing: border-box;
   }
 
   .site-list__item--catalog {
@@ -77,6 +87,16 @@
 
   .site-list__item--form {
     padding-left: 26px;
+  }
+
+  .site-list__item--search {
+    order: -2;
+
+    width: 80px;
+    margin-left: 320px;
+    padding-right: 34px;
+
+    border-right: 1px solid transparentize($content-color, 0.5);
   }
 
   .site-list__text-search {
@@ -96,19 +116,26 @@
     padding-bottom: 20px;
   }
 
-  .site-list__item--search {
-    order: -2;
-
-    margin-left: 354px;
-  }
-
   .site-list__item--cart {
     order: -1;
 
+    width: 264px;
     margin-left: auto;
     padding-right: 0;
+    padding-left: 60px;
 
     font-size: 17px;
+    text-align: end;
+  }
+
+  .site-list__icon--search {
+    left: 34px;
+    top: 36px;
+  }
+
+  .site-list__icon--cart {
+    left: 32px;
+    top: 36px;
   }
 
   .site-list__sub-item {
@@ -127,27 +154,45 @@
     font-size: 17px;
   }
 
+  .site-list__item,
+  .site-list__desktop-item {
+    width: 200px;
+    padding-left: 0;
+    padding-right: 10px;
+
+    box-sizing: border-box;
+  }
+
+  .site-list__item--form,
+  .site-list__desktop-item--sale {
+    margin-left: 20px;
+  }
+
   .site-list__item--search {
     order: 0;
+
+    width: 80px;
     margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .site-list__item--cart {
     order: 0;
+
+    width: 268px;
     margin-left: 0;
+    padding-right: 0;
+    padding-left: 60px;
   }
 
   .site-list__sub-menu {
-    width: 1050px;
+    width: 100%;
   }
 
   .site-list__desktop-item {
     display: block;
     padding: 20px 10px 20px 0;
-  }
-
-  .site-list__desktop-item--sale {
-    padding-left: 50px;
   }
 }
 

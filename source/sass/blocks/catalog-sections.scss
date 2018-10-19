@@ -5,23 +5,31 @@
   list-style: none;
 }
 
-.catalog-sections__item--interior {
+.catalog-sections__link--interior {
   background-color: $main-color;
 }
 
-.catalog-sections__item--toy {
+.catalog-sections__link--toy {
   background-color: #56c3b2;
 }
 
 .catalog-sections__link {
   display: block;
-  padding: 28px 0;
+  padding: 27px 0;
 
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover .catalog-sections__icon {
+    opacity: 0.7;
+  }
+
+  &:active .catalog-section__wrapper {
+    opacity: 0.3;
+  }
 }
 
 .catalog-section__wrapper {
@@ -33,6 +41,9 @@
 .catalog-sections__title {
   display: block;
   width: 130px;
+
+  font-size: 19px;
+  line-height: 24px;
 }
 
 .catalog-sections__icon {
@@ -46,18 +57,40 @@
 }
 
 .catalog-sections__icon--interior {
-  top: -5px;
-  right: 6px;
+  top: -4px;
+  right: 5px;
 }
 
 .catalog-sections__icon--toy {
   top: -4px;
-  right: -7px;
+  right: -3px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-sections {
+    position: relative;
+
     display: flex;
+  }
+
+  .catalog-sections__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog-sections::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+
+    width: 100%;
+    height: 24px;
+
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px 100%;
   }
 
   .catalog-sections__item {
@@ -67,5 +100,37 @@
   .catalog-section__wrapper {
     width: auto;
     margin: 0 37px;
+  }
+
+  .catalog-sections__link {
+    padding: 30px 0;
+  }
+
+  .catalog-sections__icon--interior {
+    top: 0;
+    right: -1px;
+  }
+
+  .catalog-sections__icon--toy {
+    top: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-sections__link:hover {
+    margin-top: -5px;
+    padding-bottom: 35px;
+  }
+
+  .catalog-sections::after {
+    bottom: -22px;
+    right: -100px;
+
+    width: 1250px;
+    height: 40px;
+
+    background-image: url("../../img/bg-zigzag-fill.svg");
+
+    background-size: contain;
   }
 }

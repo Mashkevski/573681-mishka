@@ -22,7 +22,7 @@
 .advantages__item {
   position: relative;
 
-  padding: 70px 0 15px 0;
+  padding: 70px 0 14px 0;
 
   font-size: 17px;
   line-height: 20px;
@@ -78,7 +78,7 @@
   }
 
   .advantages__title {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
 
     font-size: 43px;
     line-height: 50px;
@@ -86,10 +86,20 @@
 
   .advantages__item {
     width: 334px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .advantages__item--heart,
+  .advantages__item--gift {
+    order: 2;
+  }
+
+  .advantages__item--money,
+  .advantages__item--rochet {
+    order: 1;
   }
 }
 
@@ -100,9 +110,13 @@
   }
 
   .advantages__title {
-    margin-bottom: 26px;
+    margin-bottom: 32px;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__item {
+    width: 350px;
   }
 }

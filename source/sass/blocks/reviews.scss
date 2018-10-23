@@ -2,7 +2,12 @@
   position: relative;
 
   width: 260px;
+  padding-bottom: 51px;
 
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto 6px;
   box-sizing: border-box;
 }
 
@@ -22,10 +27,10 @@
 }
 
 .reviews__text {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 
   font-size: 15px;
-  line-height: 30px;
+  line-height: 31px;
   color: $content-color;
 }
 
@@ -43,7 +48,7 @@
 }
 
 .reviews__author-login {
-  margin-bottom: 20px;
+  margin-bottom: 36px;
 
   color: $content-color;
 }
@@ -51,18 +56,19 @@
 .reviews__toggles {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 38px;
 }
 
 .reviews__toggle {
   width: 130px;
-  height: 80px;
+  height: 52px;
   padding: 0;
 
   background-color: inherit;
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
+
+  border: 1px solid #ececec;
 
   cursor: pointer;
 }
@@ -77,6 +83,8 @@
 
 .reviews__toggle--left {
   background-image: url("../../img/icon-left-arrow.svg");
+
+  border-right: none;
 }
 
 .reviews__toggle--right {

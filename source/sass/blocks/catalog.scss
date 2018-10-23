@@ -1,29 +1,31 @@
 .catalog {
-  width: 260px;
-
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .catalog__title {
-  margin: 0;
-  margin-bottom: 105px;
+  margin: 0 auto 30px auto;
+  padding: 71px 0 76px 0;
+
 
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  background-color: #f1f1f1;
 }
 
 .catalog__list {
-  display: flex;
   flex-direction: column;
-  margin: 0;
+  display: flex;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
 }
 
 .catalog__element {
-  margin-bottom: 58px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {

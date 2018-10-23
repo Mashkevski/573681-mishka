@@ -39,20 +39,26 @@
 }
 
 .featured-product__description {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .featured-product__fields {
+  width: 100%;
   margin-bottom: 28px;
 
   font-size: 15px;
   line-height: 20px;
+
+  border-collapse: collapse;
 }
 
 
 .featured-product__field,
 .featured-product__value {
   padding: 10px 0 9px 0;
+
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
 }
 
 .featured-product__value {

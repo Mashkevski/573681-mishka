@@ -1,21 +1,32 @@
-.order {
-  width: 260px;
-}
-
 .order__title {
+  width: 100%;
   margin: 0;
-  margin-bottom: 98px;
+  margin-bottom: 22px;
+  padding: 70px 0 76px 0;
 
   font-size: 27px;
   line-height: 30px;
+
+  background-color: #f1f1f1;
+}
+
+.order__title-text {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 10px;
 }
 
 .order__description {
-  margin: 0;
-  margin-bottom: 23px;
+  width: 260px;
+  margin: 0 auto 23px auto;
 
   font-size: 13px;
   line-height: 24px;
+}
+
+.order__form {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

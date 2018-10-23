@@ -1,12 +1,17 @@
 .advantages {
   width: 260px;
+  padding-top: 36px;
 
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 6px;
   box-sizing: border-box;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 
   font-size: 25px;
   line-height: 30px;
@@ -22,7 +27,7 @@
 .advantages__item {
   position: relative;
 
-  padding: 70px 0 14px 0;
+  padding: 70px 0 13px 0;
 
   font-size: 17px;
   line-height: 20px;

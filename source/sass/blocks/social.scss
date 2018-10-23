@@ -1,12 +1,11 @@
 .social {
-  width: 260px;
+  width: 100%;
   border-bottom: 1px solid #e5e5e5;
 
   box-sizing: border-box;
 }
 
 .social__list,
-.social__item,
 .social__link {
   display: flex;
   justify-content: center;
@@ -21,14 +20,9 @@
   list-style: none;
 }
 
-.social__item {
+.social__link {
   width: 58px;
   height: 79px;
-}
-
-.social__link {
-  width: 30px;
-  height: 30px;
 }
 
 .social__link:hover path {

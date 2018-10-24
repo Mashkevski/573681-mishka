@@ -1,7 +1,6 @@
 'use strict';
 
 var ESC_KEYCODE = 27;
-var ENTER_KEYCODE = 13;
 
 var popup = document.querySelector('.modal');
 var modalOverlay = document.querySelector('.modal-overlay');
@@ -22,8 +21,6 @@ var closePopup = function () {
   modalOverlay.classList.remove('modal-overlay--show');
 
   document.removeEventListener('keydown', onPopupEscPress);
-  modalOverlay.removeEventListener('click', onOverlayPress)
-  modalFormSubmit.removeEventListener('click', onSubmitButtonPress)
 };
 
 var onOverlayPress = function () {

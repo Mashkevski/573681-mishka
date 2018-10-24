@@ -6,7 +6,7 @@
 
   border: 2px solid $content-color;
 
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -26,4 +26,13 @@
 
 .button:active {
   color: transparentize(#ffffff, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
+    line-height: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

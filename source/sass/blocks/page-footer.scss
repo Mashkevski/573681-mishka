@@ -14,31 +14,28 @@
   width: 200px;
 }
 
-.page-footer__logo {
-  display: inline-block;
-}
-
 .page-footer__logo-image {
   width: 102px;
   height: 35px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 668px;
-    margin-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
   }
 
   .page-footer__logo-wrapper {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__container {
     width: 1050px;
   }
 }

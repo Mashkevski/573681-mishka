@@ -1,7 +1,17 @@
 .contacts {
   position: relative;
 
+  width: 320px;
+  padding-top: 43px;
+
   line-height: 30px;
+
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: auto 6px;
+
   box-sizing: border-box;
 }
 
@@ -82,6 +92,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+
+    background-image: none;
+  }
+
   .contacts__title,
   .contacts__items {
     width: 668px;

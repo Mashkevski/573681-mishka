@@ -1,20 +1,12 @@
 @media (min-width: $tablet-width) {
   .main-header {
-    margin-bottom: 22px;
-  }
-
-  .main-header--catalog {
-    margin-bottom: 32px;
-  }
-
-  .main-header--order {
-    margin-bottom: 34px;
+    z-index: 100;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 
   .main-header--catalog {

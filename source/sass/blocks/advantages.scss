@@ -1,16 +1,17 @@
 .advantages {
-  width: 260px;
+  width: 320px;
   padding-top: 36px;
 
   background-image: url("../../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: top center;
   background-size: auto 6px;
   box-sizing: border-box;
 }
 
 .advantages__title {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 15px;
 
   font-size: 25px;
@@ -18,7 +19,8 @@
 }
 
 .advantages__list {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -74,15 +76,20 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 668px;
+    width: 768px;
+    padding-top: 66px;
+
+    background-size: auto 17px;
   }
 
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    width: 668px;
   }
 
   .advantages__title {
+    width: 668px;
     margin-bottom: 33px;
 
     font-size: 43px;
@@ -111,14 +118,22 @@
 @media (min-width: $desktop-width) {
   .advantages {
     width: 1050px;
-    padding: 0 175px;
+    padding: 86px 175px 0 175px;
+
+    background-size: auto 21px;
   }
 
   .advantages__title {
+    margin-left: 0;
     margin-bottom: 32px;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__list {
+    width: auto;
+    margin: 0;
   }
 
   .advantages__item {

@@ -11,7 +11,7 @@
 }
 
 .page-main__reviews {
-  margin: 0 auto 38px auto;
+  margin: 0 auto 45px auto;
 }
 
 .page-main__contacts {
@@ -36,46 +36,42 @@
   }
 
   .page-main__nice-items {
-    margin: 0 auto 45px auto;
+    margin-bottom: 33px;
   }
 
   .page-main__featured {
-    margin-bottom: 119px;
+    margin-bottom: 55px;
   }
 
   .page-main__advantages {
-    margin-bottom: 41px;
+    margin-bottom: 45px;
   }
 
   .page-main__reviews {
-    margin-bottom: 113px;
+    margin-bottom: 0;
   }
 
   .page-main__contacts {
-    margin-bottom: 90px;
+    margin-bottom: 55px;
   }
 
   .page-main__video {
-    margin-bottom: 140px;
+    margin-bottom: 70px;
   }
 
   .page-main__order {
-    margin-bottom: 83px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__catalog {
     margin: 0 auto;
-    margin-bottom: 64px;
-  }
-
-  .page-main__nice-items {
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   .page-main__featured {
-    margin-bottom: 156px;
+    margin-bottom: 76px;
   }
 
   .page-main__advantages {
@@ -83,14 +79,18 @@
   }
 
   .page-main__reviews {
-    margin-bottom: 161px;
+    margin-bottom: 66px;
   }
 
   .page-main__contacts {
-    margin-bottom: 140px;
+    margin-bottom: 105px;
   }
 
   .page-main__video {
-    margin-bottom: 196px;
+    margin-bottom: 100px;
+  }
+
+  .page-main__order {
+    margin-bottom: 43px;
   }
 }

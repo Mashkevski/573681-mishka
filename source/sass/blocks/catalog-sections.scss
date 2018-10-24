@@ -1,5 +1,4 @@
 .catalog-sections {
-  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -71,26 +70,12 @@
     position: relative;
 
     display: flex;
+    width: 668px;
   }
 
   .catalog-sections__title {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .catalog-sections::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -12px;
-
-    width: 100%;
-    height: 24px;
-
-    background-image: url("../../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 768px 100%;
   }
 
   .catalog-sections__item {
@@ -117,20 +102,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-sections {
+    width: 1050px;
+  }
+
   .catalog-sections__link:hover {
     margin-top: -5px;
     padding-bottom: 35px;
-  }
-
-  .catalog-sections::after {
-    bottom: -22px;
-    right: -100px;
-
-    width: 1250px;
-    height: 40px;
-
-    background-image: url("../../img/bg-zigzag-fill.svg");
-
-    background-size: contain;
   }
 }

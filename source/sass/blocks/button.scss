@@ -20,8 +20,9 @@
 }
 
 .button:hover {
-  background-color: $content-color;
   color: #ffffff;
+
+  background-color: $content-color;
 }
 
 .button:active {

@@ -1,19 +1,27 @@
 .advantages {
-  width: 260px;
+  width: 320px;
+  padding-top: 36px;
+
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: auto 6px;
 
   box-sizing: border-box;
 }
 
 .advantages__title {
-  margin: 0;
-  margin-bottom: 14px;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 15px;
 
   font-size: 25px;
   line-height: 30px;
 }
 
 .advantages__list {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -22,7 +30,7 @@
 .advantages__item {
   position: relative;
 
-  padding: 70px 0 15px 0;
+  padding: 70px 0 13px 0;
 
   font-size: 17px;
   line-height: 20px;
@@ -69,16 +77,21 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 668px;
+    width: 768px;
+    padding-top: 66px;
+
+    background-size: auto 17px;
   }
 
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
+    width: 668px;
   }
 
   .advantages__title {
-    margin-bottom: 31px;
+    width: 668px;
+    margin-bottom: 33px;
 
     font-size: 43px;
     line-height: 50px;
@@ -86,23 +99,45 @@
 
   .advantages__item {
     width: 334px;
-    margin-bottom: 26px;
+    margin-bottom: 28px;
 
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .advantages__item--heart,
+  .advantages__item--gift {
+    order: 2;
+  }
+
+  .advantages__item--money,
+  .advantages__item--rochet {
+    order: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
     width: 1050px;
-    padding: 0 175px;
+    padding: 86px 175px 0 175px;
+
+    background-size: auto 21px;
   }
 
   .advantages__title {
-    margin-bottom: 26px;
+    margin-left: 0;
+    margin-bottom: 32px;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__list {
+    width: auto;
+    margin: 0;
+  }
+
+  .advantages__item {
+    width: 350px;
   }
 }

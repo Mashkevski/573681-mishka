@@ -1,28 +1,16 @@
-.main-header {
-  margin: 0 auto;
-}
-
-.main-header--catalog {
-  margin-bottom: 73px;
-}
-
 @media (min-width: $tablet-width) {
   .main-header {
-    margin-bottom: 22px;
-  }
-
-  .main-header--catalog {
-    margin-bottom: 36px;
-  }
-
-  .main-header--order {
-    margin-bottom: 34px;
+    z-index: 100;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    margin: 0 auto;
+  }
+
   .main-header--catalog {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .main-header--order {

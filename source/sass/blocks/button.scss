@@ -6,24 +6,34 @@
 
   border: 2px solid $content-color;
 
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   font-family: inherit;
   text-transform: uppercase;
-  color: inherit;
+  color: $content-color;
 
   cursor: pointer;
   box-sizing: border-box;
 }
 
 .button:hover {
-  background-color: $content-color;
   color: #ffffff;
+
+  background-color: $content-color;
 }
 
 .button:active {
   color: transparentize(#ffffff, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
+    line-height: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }

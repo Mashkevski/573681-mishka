@@ -31,7 +31,7 @@
 }
 
 .contacts__items {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .contacts__item {
@@ -74,16 +74,9 @@
   border-color: #62d1ba;
 }
 
-.contacts__mobile-map {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 42px;
-}
-
-.contacts__tablet-map,
-.contacts__desktop-map {
-  display: none;
+.contacts__map {
+  width: 320px;
+  margin-bottom: 32px;
 }
 
 .contacts__write-us {
@@ -131,15 +124,13 @@
     width: 245px;
   }
 
-  .contacts__mobile-map {
-    display: none;
-  }
-
-  .contacts__tablet-map {
+  .contacts__map {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
+
+    background-color: #f5ead8;
   }
 
   .contacts__write-us {
@@ -173,11 +164,7 @@
     display: block;
   }
 
-  .contacts__tablet-map {
-    display: none;
-  }
-
-  .contacts__desktop-map {
+  .contacts__map {
     position: absolute;
     top: 0;
     right: 0;

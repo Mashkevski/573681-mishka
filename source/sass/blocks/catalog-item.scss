@@ -22,11 +22,6 @@
   background-color: #f1f1f1;
 }
 
-.catalog-item__tablet-image,
-.catalog-item__desktop-image {
-  display: none;
-}
-
 .catalog-item__wrapper {
   padding: 28px;
 
@@ -113,10 +108,6 @@
     padding: 0 0 0 334px;
   }
 
-  .catalog-item__image {
-    display: none;
-  }
-
   .catalog-item__picture {
     position: absolute;
     top: 0;
@@ -124,10 +115,6 @@
 
     width: 334px;
     height: 334px;
-  }
-
-  .catalog-item__tablet-image {
-    display: block;
   }
 
   .catalog-item__wrapper {
@@ -180,15 +167,6 @@
   .catalog-item__picture {
     width: 316px;
     height: 462px;
-  }
-
-  .catalog-item__desktop-image {
-    display: block;
-  }
-
-  .catalog-item__image,
-  .catalog-item__tablet-image {
-    display: none;
   }
 
   .catalog-item__wrapper {

@@ -7,9 +7,7 @@
 
 .reviews__title,
 .reviews__text,
-.reviews__content,
-.reviews__author-name,
-.reviews__author-login {
+.reviews__content {
   margin: 0;
 }
 
@@ -30,6 +28,8 @@
 
 .reviews__author-name,
 .reviews__author-login {
+  display: block;
+
   font-size: 17px;
   line-height: 18px;
   font-style: normal;

@@ -151,8 +151,6 @@
   }
 
   .contacts__map {
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin-bottom: 45px;
 
@@ -161,6 +159,10 @@
 
   .contacts__map-pin {
     left: 363px;
+  }
+
+  .contacts__map-iframe {
+    border: 0;
   }
 
   .contacts__write-us {

@@ -31,7 +31,7 @@
 }
 
 .contacts__items {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .contacts__item {
@@ -74,16 +74,35 @@
   border-color: #62d1ba;
 }
 
-.contacts__mobile-map {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 42px;
+.contacts__map {
+  position: relative;
+  width: 320px;
+  margin-bottom: 32px;
 }
 
-.contacts__tablet-map,
-.contacts__desktop-map {
-  display: none;
+.contacts__interactive-map {
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 150px;
+  left: 139px;
+  width: 66px;
+  height: 100px;
+  margin: 0;
+}
+
+
+.contacts__interactive-map,
+.contacts__interactive-map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__write-us {
@@ -131,15 +150,19 @@
     width: 245px;
   }
 
-  .contacts__mobile-map {
-    display: none;
+  .contacts__map {
+    width: 100%;
+    margin-bottom: 45px;
+
+    background-color: #f5ead8;
   }
 
-  .contacts__tablet-map {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 55px;
+  .contacts__map-pin {
+    left: 363px;
+  }
+
+  .contacts__map-iframe {
+    border: 0;
   }
 
   .contacts__write-us {
@@ -173,11 +196,7 @@
     display: block;
   }
 
-  .contacts__tablet-map {
-    display: none;
-  }
-
-  .contacts__desktop-map {
+  .contacts__map {
     position: absolute;
     top: 0;
     right: 0;
@@ -185,6 +204,10 @@
     display: block;
     width: 525px;
     height: 457px;
+  }
+
+  .contacts__map-pin {
+    left: 239px;
   }
 
   .contacts__write-us {

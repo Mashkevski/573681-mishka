@@ -14,6 +14,16 @@
   width: 200px;
 }
 
+.page-footer__logo[href] {
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__logo-image {
   width: 102px;
   height: 35px;

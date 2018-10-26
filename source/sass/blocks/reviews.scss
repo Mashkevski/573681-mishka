@@ -7,9 +7,7 @@
 
 .reviews__title,
 .reviews__text,
-.reviews__content,
-.reviews__author-name,
-.reviews__author-login {
+.reviews__content {
   margin: 0;
 }
 
@@ -30,6 +28,8 @@
 
 .reviews__author-name,
 .reviews__author-login {
+  display: block;
+
   font-size: 17px;
   line-height: 18px;
   font-style: normal;
@@ -95,7 +95,13 @@
       url("../../img/bg-zigzag-line.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom center;
-    background-size: auto, 768px 17px;
+    background-size: auto, auto 17px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/review@2x.jpg"),
+        url("../../img/bg-zigzag-line.svg");
+      background-size: 350px auto, auto 17px;
+    }
   }
 
   .reviews__title {
@@ -154,7 +160,7 @@
     width: 1050px;
     padding: 69px 0 173px 175px;
 
-    background-size: auto, auto 21px;
+    background-size: 350px auto, auto 21px;
   }
 
   .reviews__title {

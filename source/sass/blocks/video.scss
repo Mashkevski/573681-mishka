@@ -81,11 +81,6 @@
   }
 }
 
-.video__image-tablet,
-.video__image-desktop {
-  display: none;
-}
-
 .video__make-order,
 .video__description {
   margin: 0 34px;
@@ -120,18 +115,16 @@
   .video__title {
     margin-left: 20px;
     padding-top: 3px;
+
     font-size: 20px;
   }
 
   .video__picture {
-    margin-bottom: 36px;
+    order: -1;
+
     width: 668px;
     height: 455px;
-    order: -1;
-  }
-
-  .video__image {
-    display: none;
+    margin-bottom: 36px;
   }
 
   .video__play {
@@ -154,10 +147,6 @@
       width: 81px;
       height: 62px;
     }
-  }
-
-  .video__image-tablet {
-    display: block;
   }
 
   .video__description {
@@ -200,16 +189,9 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 682px;
     height: 455px;
-  }
-
-  .video__image-tablet {
-    display: none;
-  }
-
-  .video__image-desktop {
-    display: block;
   }
 
   .video__description {

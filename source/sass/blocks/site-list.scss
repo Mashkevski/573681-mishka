@@ -18,7 +18,7 @@
   position: relative;
 }
 
-.site-list__sub-menu {
+.site-list__sub-container {
   display: none;
   flex-grow: 1;
   font-size: 15px;
@@ -69,8 +69,14 @@
     width: auto;
   }
 
+  .site-list__sub-container {
+    display: block;
+  }
+
   .site-list__sub-menu {
     display: flex;
+
+    font-size: 15px;
   }
 
   .site-list__item--search {
@@ -225,4 +231,3 @@
     padding: 20px 0 20px 20px;
   }
 }
-

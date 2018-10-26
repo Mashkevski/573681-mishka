@@ -65,17 +65,13 @@
 }
 
 .featured-product__picture {
-  display: flex;
-  justify-content: center;
-
+  display: block;
+  width: 260px;
+  height: 315px;
+  margin: 0;
   margin-bottom: 25px;
 
   background-color: #f1f1f1;
-}
-
-.featured-product__picture--tablet,
-.featured-product__picture--desktop {
-  display: none;
 }
 
 .featured-product__price {
@@ -145,14 +141,9 @@
     position: absolute;
     top: 108px;
     right: 0;
-  }
 
-  .featured-product__picture--mobile {
-    display: none;
-  }
-
-  .featured-product__picture--tablet {
-    display: block;
+    width: 333px;
+    height: 404px;
   }
 
   .featured-product__price {
@@ -196,14 +187,9 @@
 
   .featured-product__picture {
     top: 15px;
-  }
 
-  .featured-product__picture--tablet {
-    display: none;
-  }
-
-  .featured-product__picture--desktop {
-    display: block;
+    width: 525px;
+    height: 636px;
   }
 
   .featured-product__price {

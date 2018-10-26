@@ -45,4 +45,8 @@
   .main-nav--opened .main-nav__list {
     display: block;
   }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
 }

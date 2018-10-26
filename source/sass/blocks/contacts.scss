@@ -75,8 +75,34 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 320px;
   margin-bottom: 32px;
+}
+
+.contacts__interactive-map {
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 150px;
+  left: 139px;
+  width: 66px;
+  height: 100px;
+  margin: 0;
+}
+
+
+.contacts__interactive-map,
+.contacts__interactive-map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__write-us {
@@ -133,6 +159,10 @@
     background-color: #f5ead8;
   }
 
+  .contacts__map-pin {
+    left: 363px;
+  }
+
   .contacts__write-us {
     width: 230px;
   }
@@ -172,6 +202,10 @@
     display: block;
     width: 525px;
     height: 457px;
+  }
+
+  .contacts__map-pin {
+    left: 239px;
   }
 
   .contacts__write-us {

@@ -21,15 +21,7 @@
   display: none;
 }
 
-.page-header__mobile-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 140px;
-  height: 79px;
-
-  cursor: pointer;
-
+.page-header__mobile-logo[href] {
   &:hover {
     opacity: 0.6;
   }
@@ -39,9 +31,18 @@
   }
 }
 
+.page-header__mobile-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 79px;
+
+  cursor: pointer;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
-    flex-direction: row;
     width: auto;
     box-shadow: none;
   }
@@ -61,7 +62,22 @@
   .page-header__wrapper {
     position: relative;
     width: 668px;
+    display: block;
     margin: 0 auto;
+  }
+
+  .page-header__tablet-logo[href],
+  .page-header__desktop-logo[href] {
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__tablet-logo {

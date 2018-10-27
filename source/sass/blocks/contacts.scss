@@ -61,6 +61,10 @@
   width: 160px;
 }
 
+.contacts__description-text {
+  display: block;
+}
+
 .contacts__email {
   text-decoration: none;
   color: inherit;
@@ -100,9 +104,13 @@
 
 
 .contacts__interactive-map,
-.contacts__interactive-map iframe {
+.contacts__map-iframe {
   width: 100%;
   height: 100%;
+}
+
+.contacts__map-iframe {
+  border: 0;
 }
 
 .contacts__write-us {
@@ -159,10 +167,6 @@
 
   .contacts__map-pin {
     left: 363px;
-  }
-
-  .contacts__map-iframe {
-    border: 0;
   }
 
   .contacts__write-us {

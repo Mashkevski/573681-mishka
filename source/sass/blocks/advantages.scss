@@ -35,6 +35,28 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+
+  box-sizing: border-box;
+}
+
+.advantages__item--flower {
+  padding-right: 70px;
+}
+
+.advantages__item--money {
+  padding-right: 55px;
+}
+
+.advantages__item--heart {
+  padding-right: 75px;
+}
+
+.advantages__item--ball {
+  padding-right: 20px;
+}
+
+.advantages__item--gift {
+  padding-right: 20px;
 }
 
 .advantages__icon {
@@ -105,6 +127,26 @@
     line-height: 22px;
   }
 
+  .advantages__item--flower {
+    padding-right: 110px;
+  }
+
+  .advantages__item--money {
+    padding-right: 75px;
+  }
+
+  .advantages__item--heart {
+    padding-right: 95px;
+  }
+
+  .advantages__item--ball {
+    padding-right: 40px;
+  }
+
+  .advantages__item--gift {
+    padding-right: 40px;
+  }
+
   .advantages__item--heart,
   .advantages__item--gift {
     order: 2;
@@ -138,6 +180,6 @@
   }
 
   .advantages__item {
-    width: 350px;
+    margin-right: 16px;
   }
 }

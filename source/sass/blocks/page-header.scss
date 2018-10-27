@@ -14,14 +14,7 @@
   width: 100%;
 }
 
-.page-header__tablet-logo,
-.page-header__desktop-logo {
-  position: absolute;
-
-  display: none;
-}
-
-.page-header__mobile-logo[href] {
+.page-header__logo[href] {
   &:hover {
     opacity: 0.6;
   }
@@ -31,7 +24,7 @@
   }
 }
 
-.page-header__mobile-logo {
+.page-header__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,30 +59,20 @@
     margin: 0 auto;
   }
 
-  .page-header__tablet-logo[href],
-  .page-header__desktop-logo[href] {
-
-    cursor: pointer;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
-  .page-header__tablet-logo {
+  .page-header__logo {
+    position: absolute;
     top: 22px;
     left: 0;
 
     display: block;
+    width: auto;
+    height: auto;
     margin: 0;
   }
 
-  .page-header__mobile-logo {
-    display: none;
+  .page-header__logo-image {
+    width: 114px;
+    height: 47px;
   }
 }
 
@@ -102,14 +85,13 @@
     width: 1050px;
   }
 
-  .page-header__desktop-logo {
+  .page-header__logo {
     top: 9px;
     left: 450px;
-
-    display: block;
   }
 
-  .page-header__tablet-logo {
-    display: none;
+  .page-header__logo-image {
+    width: 149px;
+    height: 73px;
   }
 }

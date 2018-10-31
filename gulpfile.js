@@ -13,7 +13,8 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
-
+var svgstore = require("gulp-svgstore");
+var cheerio = require("gulp-cheerio");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -32,8 +33,8 @@ gulp.task("css", function () {
 gulp.task("copy", function () {
   return gulp.src([
   "source/fonts/*.{woff,woff2}",
-  "source/img/**",
-  "source/js/**"
+  "source/js/**",
+  "source/*.html"
   ], {
     base: "source"
   })
@@ -44,13 +45,14 @@ gulp.task("clean", function () {
   return del("build")
 });
 
-gulp.task("image", function () {
-  return gulp.src("build/img/**/*.{jpeg, svg")
-  .pipe(imagemin([
-    imagemin.jpegtran({progressive: true}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"));
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -59,12 +61,19 @@ gulp.task("webp", function () {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-  .pipe(posthtml([
-    include()
-  ]))
-  .pipe(gulp.dest( "build"));
+gulp.task("sprite", function () {
+  return gulp.src("build/img/sprite-*.svg")
+  .pipe(cheerio({
+    run: function ($) {
+      $('[fill]').removeAttr('fill');
+    },
+    parserOptions: { xmlMode: true }
+}))
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img/"));
 });
 
 gulp.task("refresh", function (done) {
@@ -77,15 +86,16 @@ gulp.task("server", function () {
     server: "build/"
   });
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  // gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css",
-  "html"
+  "images",
+  "sprite",
+  "webp",
+  "css"
 ));
 
 gulp.task("start", gulp.series("build", "server"));

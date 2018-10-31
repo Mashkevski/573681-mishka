@@ -43,26 +43,19 @@
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:active {
+    border: 2px solid $main-color;
+  }
 }
 
-.sizes__element:hover {
-  border: 2px solid #c7c7c7;
-}
 
-.sizes__element:active,
-.sizes__element:focus {
-  border: 2px solid $main-color;
-}
-
-.sizes__input--s:checked + label {
-  border: 2px solid $main-color;
-}
-
-.sizes__input--m:checked + label {
-  border: 2px solid $main-color;
-}
-
-.sizes__input--l:checked + label {
+.sizes__input:checked + .sizes__element,
+.sizes__input:focus + .sizes__element {
   border: 2px solid $main-color;
 }
 

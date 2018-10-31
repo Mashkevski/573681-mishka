@@ -21,16 +21,28 @@
 }
 
 .social__link {
+  position: relative;
   width: 58px;
   height: 79px;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.social__link:hover path {
-  fill: darken(desaturate(adjust-hue($main-color, 3deg), 4%), 8%);
-}
+.social__link::after {
+  position: absolute;
 
-.social__link:active path {
-  fill: transparentize($main-color, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
 }
 
 @media (min-width: $tablet-width) {

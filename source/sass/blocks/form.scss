@@ -86,6 +86,10 @@
   }
 }
 
+.form__input:focus + label span::before {
+  border-color: #62d1ba;
+}
+
 .form__element-type span::before {
   position: absolute;
   top: 0;
@@ -147,7 +151,7 @@
 }
 
 .form__element-color input[type="checkbox"]:checked + label span::after {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
 }
 
 .form__icon {
@@ -205,11 +209,8 @@
   border-color: $main-color;
 }
 
-.form__input-field:hover + .form__icon path {
-  fill: $main-color;
-}
-
 .form__input-field:hover + .form__icon {
+  fill: $main-color;
   opacity: 1;
 }
 
@@ -218,11 +219,8 @@
   opacity: 1;
 }
 
-.form__input-field:focus + .form__icon path {
-  fill: $main-color;
-}
-
 .form__input-field:focus + .form__icon {
+  fill: $main-color;
   opacity: 1;
 }
 

@@ -8,22 +8,33 @@
 }
 
 .copyright__link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: inherit;
+
+  &:hover .copyright__logo {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link path {
+.copyright__link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+}
+
+.copyright__logo {
   fill: $main-color;
-}
-
-.copyright__link:hover path {
-  fill: #46c1ae;
-}
-
-.copyright__link:active {
-  opacity: 0.3;
 }
 
 .copyright__text {

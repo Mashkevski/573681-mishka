@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  padding: 22px 0 33px 0;
+  padding: 24px 0 33px 0;
 
   border: 1px solid #ececec;
 
@@ -15,10 +15,6 @@
   padding-left: 25px;
 }
 
-.video__icon path {
-  fill: $main-color;
-}
-
 .video__icon {
   flex-shrink: 0;
 
@@ -26,6 +22,8 @@
   height: 32px;
 
   padding: 6px 10px 10px 10px;
+
+  fill: $main-color;
 }
 
 .video__title {
@@ -54,7 +52,7 @@
   padding: 0;
 
   background: none;
-  background-image: url("../../img/icon-play.svg");
+  background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -95,6 +93,8 @@
 
 .video__make-order {
   width: auto;
+
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {

@@ -13,6 +13,7 @@
 }
 
 .catalog-sections__link {
+  position: relative;
   display: block;
   padding: 27px 0;
 
@@ -26,43 +27,66 @@
     opacity: 0.7;
   }
 
-  &:active .catalog-section__wrapper {
+  &:active .catalog-sections__title {
     opacity: 0.3;
   }
 }
 
-.catalog-section__wrapper {
-  position: relative;
-  width: 260px;
-  margin: 0 auto;
+.catalog-sections__link--interior::after,
+.catalog-sections__link--toy::after {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
 }
 
 .catalog-sections__title {
-  display: block;
-  width: 130px;
+  position: relative;
+
+  width: 260px;
+  margin: 0 auto;
+  padding-right: 130px;
 
   font-size: 19px;
   line-height: 24px;
+
+  box-sizing: border-box;
 }
 
 .catalog-sections__icon {
   position: absolute;
 
-  opacity: 0.5;
-}
+  display: block;
 
-.catalog-sections__icon path {
-  fill: #149080;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  opacity: 0.5;
+  overflow: hidden;
 }
 
 .catalog-sections__icon--interior {
   top: -4px;
   right: 5px;
+
+  width: 40px;
+  height: 62px;
+
+  background-image: url("../img/icon-interior.svg");
 }
 
 .catalog-sections__icon--toy {
   top: -4px;
   right: -3px;
+
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../img/icon-toy.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -73,22 +97,16 @@
     width: 668px;
   }
 
+  .catalog-sections__link {
+    width: 334px;
+    padding: 30px 37px;
+
+    box-sizing: border-box;
+  }
+
   .catalog-sections__title {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .catalog-sections__item {
-    flex-grow: 1;
-  }
-
-  .catalog-section__wrapper {
-    width: auto;
-    margin: 0 37px;
-  }
-
-  .catalog-sections__link {
-    padding: 30px 0;
   }
 
   .catalog-sections__icon--interior {
@@ -104,6 +122,15 @@
 @media (min-width: $desktop-width) {
   .catalog-sections {
     width: 1050px;
+  }
+
+  .catalog-sections__link {
+    width: 525px;
+  }
+
+  .catalog-sections__title {
+    width: auto;
+    padding-right: 300px;
   }
 
   .catalog-sections__link:hover {

@@ -77,13 +77,13 @@
 }
 
 .reviews__toggle--left {
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
 
   border-right: none;
 }
 
 .reviews__toggle--right {
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -91,15 +91,15 @@
     width: 768px;
     padding: 79px 50px 117px 50px;
 
-    background-image: url("../../img/review@1x.jpg"),
-      url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/review@1x.jpg"),
+      url("../img/bg-zigzag-line.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom center;
     background-size: auto, auto 17px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg"),
-        url("../../img/bg-zigzag-line.svg");
+      background-image: url("../img/review@2x.jpg"),
+        url("../img/bg-zigzag-line.svg");
       background-size: 350px auto, auto 17px;
     }
   }

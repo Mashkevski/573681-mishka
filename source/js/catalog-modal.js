@@ -40,7 +40,8 @@ var onSubmitButtonPress = function () {
 };
 
 for (var i = 0; i < openModalButtons.length; i++) {
-  openModalButtons[i].addEventListener('click', function () {
+  openModalButtons[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
     openPopup();
   })
 }

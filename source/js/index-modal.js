@@ -5,7 +5,6 @@ var ESC_KEYCODE = 27;
 var popup = document.querySelector('.modal');
 var modalOverlay = document.querySelector('.modal-overlay');
 var modalFormSubmit = popup.querySelector('.modal__form-submit');
-var openModalButtons = document.querySelectorAll('.catalog-item__open-modal');
 var featuredProductOrder = document.querySelector('.featured-product__order');
 
 var openPopup = function () {
@@ -40,12 +39,7 @@ var onSubmitButtonPress = function () {
   closePopup();
 };
 
-featuredProductOrder.addEventListener('click', function () {
+featuredProductOrder.addEventListener('click', function (evt) {
+  evt.preventDefault();
   openPopup();
 });
-
-for (var i = 0; i < openModalButtons.length; i++) {
-  openModalButtons[i].addEventListener('click', function () {
-    openPopup();
-  })
-}

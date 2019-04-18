@@ -1,4 +1,4 @@
-#[Личный проект «Мишка»](https://Mashkevski.github.io/573681-mishka/build/)[![Dependency status][dependency-image]][dependency-url]
+[Личный проект «Мишка»](https://Mashkevski.github.io/573681-mishka/build/)
 
 * Студент: [Сергей Машкевский](https://up.htmlacademy.ru/adaptive/15/user/573681).
 * Наставник: [Светлана Корякина](https://htmlacademy.ru/profile/id477401).
